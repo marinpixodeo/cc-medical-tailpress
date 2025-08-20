@@ -322,47 +322,11 @@
 </section>
 
 <!-- Compassion Section -->
-<section class="content-section section-white">
-    <div class="container-responsive">
-        <div class="content-grid">
-            <div class="bg-gray-200 rounded-lg h-80 flex items-center justify-center">
-                <div class="text-center">
-                    <svg class="icon-large" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
-                    </svg>
-                    <p class="text-gray-500">棚の薬を見る笑顔の女性薬剤師</p>
-                </div>
-            </div>
-            <div>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                    国と一味に思いやりを描けよう
-                </h2>
-                <p class="text-lg text-gray-600 mb-6">
-                    私たちは、地域の皆様の健康を支えるため、
-                    思いやりを持ってサービスを提供いたします。
-                    国と共に、地域社会の発展に貢献していきます。
-                </p>
-                <ul class="feature-list">
-                    <li class="feature-item">
-                        <svg class="feature-icon feature-icon-green" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                        </svg>
-                        地域社会への貢献
-                    </li>
-                    <li class="feature-item">
-                        <svg class="feature-icon feature-icon-green" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                        </svg>
-                        思いやりのあるサービス
-                    </li>
-                    <li class="feature-item">
-                        <svg class="feature-icon feature-icon-green" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                        </svg>
-                        健康な社会の実現
-                    </li>
-                </ul>
-            </div>
+<section class="content-section section-white py-[126px] bg-center bg-cover" style="background-image: url('<?= THEME_URL ?>/images/sec_08.webp');">
+    <div class="container-responsive text-right">
+        <div class="inline-block w-[700px] bg-white rounded-[8px] px-[50px] py-[56px] pb-[34px] text-left">
+            <h3 class="text-[28px] font-bold text-[var(--color-orange)] my-0 tracking-[2.8px]">薬と一緒に思いやりを届けよう</h3>
+            <p class="tracking-[1.6px] leading-[32px] mt-[35px]">地域の皆さまに何度も足を運んでいただけるような地域薬局を、<br>一緒につくっていきましょう！<br>ぜひお気軽にご応募ください。</p>
         </div>
     </div>
 </section>

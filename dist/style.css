@@ -214,6 +214,9 @@
   .hidden {
     display: none;
   }
+  .inline-block {
+    display: inline-block;
+  }
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
@@ -235,8 +238,14 @@
   .h-\[84px\] {
     height: 84px;
   }
+  .h-\[276px\] {
+    height: 276px;
+  }
   .h-\[427px\] {
     height: 427px;
+  }
+  .h-\[530px\] {
+    height: 530px;
   }
   .h-full {
     height: 100%;
@@ -267,6 +276,9 @@
   }
   .w-\[560px\] {
     width: 560px;
+  }
+  .w-\[700px\] {
+    width: 700px;
   }
   .w-\[900px\] {
     width: 900px;
@@ -464,6 +476,9 @@
   .bg-cover {
     background-size: cover;
   }
+  .bg-center {
+    background-position: center;
+  }
   .object-cover {
     -o-object-fit: cover;
        object-fit: cover;
@@ -541,8 +556,17 @@
   .py-\[50px\] {
     padding-block: 50px;
   }
+  .py-\[56px\] {
+    padding-block: 56px;
+  }
   .py-\[80px\] {
     padding-block: 80px;
+  }
+  .py-\[110px\] {
+    padding-block: 110px;
+  }
+  .py-\[126px\] {
+    padding-block: 126px;
   }
   .pt-8 {
     padding-top: calc(var(--spacing) * 8);
@@ -732,6 +756,10 @@
   .tracking-\[2\.7px\] {
     --tw-tracking: 2.7px;
     letter-spacing: 2.7px;
+  }
+  .tracking-\[2\.8px\] {
+    --tw-tracking: 2.8px;
+    letter-spacing: 2.8px;
   }
   .tracking-\[2px\] {
     --tw-tracking: 2px;
