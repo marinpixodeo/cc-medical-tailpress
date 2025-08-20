@@ -1,0 +1,417 @@
+@import 'tailwindcss';
+@import './theme.css';
+@import './utilities.css';
+@import './custom.css' layer(utilities);
+
+@source '../../vendor/tailpress/framework/**/*.php';
+@source '../../vendor/tailpress/framework/**/**/*.php';
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+/* Custom styles for CC Medical - Japanese Medical/Pharmacy Design */
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet&display=swap');
+
+@layer base {
+  html {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply text-gray-800 bg-white;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+}
+
+@layer components {
+  /* Header and Navigation Styles */
+  .header-top-bar {
+    @apply bg-white border-b border-gray-100;
+  }
+
+  .logo-container {
+    @apply flex items-center;
+  }
+
+  .logo-circles {
+    @apply relative flex items-center;
+  }
+
+  .logo-circle-orange {
+    @apply w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center shadow-lg z-10;
+  }
+
+  .logo-circle-teal {
+    @apply w-12 h-12 bg-teal-400 rounded-full flex items-center justify-center shadow-lg -ml-2 z-0;
+  }
+
+  .logo-text {
+    @apply text-white font-bold text-sm;
+  }
+
+  .company-name {
+    @apply text-sm font-medium text-gray-800;
+  }
+
+  .phone-number {
+    @apply text-sm font-medium text-green-500;
+  }
+
+  .inquiry-btn {
+    @apply bg-teal-400 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-teal-500 transition duration-300 flex items-center;
+  }
+
+  /* Hero Section Styles */
+  .hero-section {
+    @apply relative bg-gradient-to-br from-green-50 via-orange-50 to-pink-50 py-20;
+  }
+
+  .hero-title {
+    @apply text-4xl md:text-6xl font-bold mb-6 leading-tight text-gray-800;
+  }
+
+  .cta-circle {
+    @apply bg-orange-100 text-orange-700 px-6 py-3 rounded-full font-medium hover:bg-orange-200 transition duration-300;
+  }
+
+  .primary-cta-btn {
+    @apply bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block;
+  }
+
+  /* Section Backgrounds */
+  .section-white {
+    @apply bg-white;
+  }
+
+  .section-peach {
+    @apply bg-gradient-to-br from-orange-50 via-pink-50 to-orange-50;
+  }
+
+  /* Card Styles */
+  .job-card {
+    @apply bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition duration-300 border border-gray-100;
+  }
+
+  .reason-card {
+    @apply bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition duration-300 border border-gray-100 relative;
+  }
+
+  .store-card {
+    @apply bg-white rounded-lg p-6 shadow-md hover:shadow-lg transition duration-300 border border-gray-100;
+  }
+
+  .card-image-placeholder {
+    @apply bg-gray-200 rounded-lg h-32 mb-4 flex items-center justify-center;
+  }
+
+  .card-number {
+    @apply absolute -top-3 -left-3 w-8 h-8 bg-orange-500 text-white rounded-full flex items-center justify-center text-sm font-bold;
+  }
+
+  /* Button Styles */
+  .btn-peach {
+    @apply bg-orange-400 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-orange-500 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block;
+  }
+
+  .btn-green {
+    @apply bg-green-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 inline-block;
+  }
+
+  .btn-outline-green {
+    @apply border-2 border-green-500 text-green-700 px-8 py-4 rounded-full font-semibold hover:bg-green-500 hover:text-white transition duration-300;
+  }
+
+  /* Form Styles */
+  .form-container {
+    @apply bg-white rounded-lg p-8 shadow-lg border border-gray-100;
+  }
+
+  .form-field {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500 transition duration-300;
+  }
+
+  .form-label {
+    @apply block text-sm font-bold mb-2 text-gray-700;
+  }
+
+  .required-mark {
+    @apply text-red-500;
+  }
+
+  /* Content Section Styles */
+  .content-section {
+    @apply py-16;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-8 relative;
+    color: #ff8b94;
+    font-family: 'Zen Kaku Gothic New', 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.02em;
+  }
+
+  .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 8px;
+    background: linear-gradient(90deg, #ff8b94 0%, #ffaaa5 50%, #a8e6cf 100%);
+    border-radius: 4px;
+  }
+
+  .section-title::before {
+    content: '• • •';
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ff8b94;
+    font-size: 12px;
+    letter-spacing: 8px;
+    opacity: 0.7;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-600 leading-relaxed text-center max-w-4xl mx-auto;
+  }
+
+  /* Grid Layouts */
+  .job-grid {
+    @apply grid md:grid-cols-3 lg:grid-cols-5 gap-6 mb-8;
+  }
+
+  .reason-grid {
+    @apply grid md:grid-cols-3 lg:grid-cols-5 gap-6 mb-8;
+  }
+
+  .store-grid {
+    @apply grid md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+
+  .content-grid {
+    @apply grid lg:grid-cols-2 gap-12 items-center;
+  }
+
+  /* Application Requirements Table */
+  .requirements-table {
+    @apply bg-gray-50 rounded-lg p-8 border border-gray-200;
+  }
+
+  .requirement-row {
+    @apply flex justify-between border-b border-gray-200 pb-2;
+  }
+
+  .requirement-label {
+    @apply font-semibold text-gray-700;
+  }
+
+  .requirement-value {
+    @apply text-gray-600;
+  }
+
+  /* Footer Styles */
+  .footer-section {
+    @apply bg-white border-t border-gray-200;
+  }
+
+  .company-profile {
+    @apply bg-gray-50 rounded-lg p-6 border border-gray-200;
+  }
+
+  .map-placeholder {
+    @apply bg-gray-200 rounded-lg h-64 flex items-center justify-center;
+  }
+
+  /* Icon Styles */
+  .icon-placeholder {
+    @apply w-12 h-12 text-gray-400;
+  }
+
+  .icon-large {
+    @apply w-16 h-16 text-gray-400 mx-auto mb-4;
+  }
+
+  /* List Styles */
+  .feature-list {
+    @apply space-y-3 text-gray-600;
+  }
+
+  .feature-item {
+    @apply flex items-center;
+  }
+
+  .feature-icon {
+    @apply w-5 h-5 mr-3;
+  }
+
+  .feature-icon-green {
+    @apply text-green-500;
+  }
+
+  .feature-icon-orange {
+    @apply text-orange-500;
+  }
+}
+
+@layer utilities {
+  /* Color Utilities */
+  .text-medical-green {
+    @apply text-green-600;
+  }
+
+  .text-medical-orange {
+    @apply text-orange-600;
+  }
+
+  .bg-medical-peach {
+    @apply bg-gradient-to-br from-orange-50 via-pink-50 to-orange-50;
+  }
+
+  .bg-medical-green {
+    @apply bg-green-500;
+  }
+
+  .bg-medical-orange {
+    @apply bg-orange-400;
+  }
+
+  /* Typography Utilities */
+  .text-gradient {
+    @apply bg-gradient-to-r from-green-600 to-orange-600 bg-clip-text text-transparent;
+  }
+
+  .leading-relaxed {
+    line-height: 1.7;
+  }
+
+  .leading-tight {
+    line-height: 1.2;
+  }
+
+  /* Animation Utilities */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out;
+  }
+
+  /* Responsive Utilities */
+  .container-responsive {
+    @apply container mx-auto px-4;
+  }
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Smooth scrolling and transitions */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply transition-colors duration-200;
+  }
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 1rem;
+  }
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  .job-grid {
+    @apply grid-cols-2 gap-4;
+  }
+
+  .reason-grid {
+    @apply grid-cols-2 gap-4;
+  }
+
+  .store-grid {
+    @apply grid-cols-1 gap-4;
+  }
+}
+
+@media (max-width: 640px) {
+  .job-grid {
+    @apply grid-cols-1 gap-4;
+  }
+
+  .reason-grid {
+    @apply grid-cols-1 gap-4;
+  }
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-zinc-200, currentColor);
+  }
+}

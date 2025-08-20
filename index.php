@@ -1,115 +1,92 @@
 <?php get_header(); ?>
 
-<section class="section-mv">
-    <!-- <img class="w-full max-h-[700px] object-cover object-center" src="<?= THEME_URL ?>/images/hd_bg.webp" alt=""> -->
+<section class="section-mv relative">
+    <div class="w-[560px] absolute bottom-[45px] left-[55.8%] transform -translate-x-1/2">
+        <p class="absolute right-[-148px] top-[-98px]"><img src="<?= THEME_URL ?>/images/sb_ttls.webp" alt=""></p>
+        <p class="slogan flex justify-between font-bold text-6xl text-white flex-col w-full mb-[35px] gap-3.5 tracking-[12.2px]">
+            <span class="text-left text-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">地域の健康を</span>
+            <span class="text-right mr-[-17px] text-shadow-[0px_4px_4px_rgba(0,0,0,0.25)]">支える仕事を</span>
+        </p>
+        <a href="#" class="w-[560px] h-[84px] flex items-center justify-center text-2xl text-white bg-[var(--color-green)] rounded-full gap-2">
+            <span class="tracking-[2.5px]">お問い合わせフォーム</span>
+            <img src="<?= THEME_URL ?>/images/icon-arrow.webp" alt="">
+        </a>
+    </div>
+     <img class="w-full max-h-[700px] object-cover object-center" src="<?= THEME_URL ?>/images/hd_bg.webp" alt="">
 </section>
 
 <!-- Introduction Section -->
-<section class="content-section section-white py-20">
+<section class="content-section section-white py-19">
     <div class="container-responsive">
-        <div class="text-center max-w-5xl mx-auto">
-            <h2 class="section-title">
-                この街で、なくてはならない薬局に
-            </h2>
+        <h2 class="section-title mb-0">
+            この街で、なくてはならない薬局に
+            <span class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </h2>
 
-            <!-- Main Content Paragraphs -->
-            <div class="space-y-8 mt-12">
-                <p class="text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto">
-                    当社は愛知県内に複数の薬局を運営しております。
-                </p>
-
-                <p class="text-lg leading-relaxed text-gray-700 max-w-4xl mx-auto">
-                    地域密着型の薬局として多くの患者様にご評価いただき、着実に店舗数を拡大してまいりました。
-                </p>
-
-                <p class="text-lg leading-relaxed text-gray-700 max-w-3xl mx-auto mt-12">
-                    そんな当社では現在、一緒に働く薬剤師を大募集しております。
-                </p>
-
-                <div class="bg-gradient-to-r from-orange-50 to-pink-50 rounded-2xl p-8 mt-12 max-w-4xl mx-auto border border-orange-100">
-                    <p class="text-lg leading-relaxed text-gray-700">
-                        スタッフが快適に働けるよう、福利厚生や職場環境を整えておりますので、
-                    </p>
-                    <p class="text-lg leading-relaxed text-gray-700 mt-2">
-                        長く働き続けたい方はぜひお気軽にご応募ください。
-                    </p>
-                </div>
-            </div>
-        </div>
+        <p class="text-xl mt-[30px] leading-[45px] text-center tracking-[-0.2px]">
+            当社は愛知県内に複数の薬局を運営しております。<br>
+            地域密着型の薬局として多くの患者様に評価いただき、着実に店舗数を拡大してまいりました。<br><br>
+            そんな当社では現在、一緒に働く薬剤師を大募集しております。<br><br>
+            スタッフが快適に働けるよう、福利厚生や職場環境を整えておりますので、<br>
+            長く働き続けたい方はぜひお気軽にご応募ください。
+        </p>
     </div>
 </section>
 
 <!-- Job Search Section -->
-<section class="content-section section-peach py-20">
+<section class="relative content-section section-peach pt-[34px] pb-[50px] before:content-[''] before:w-full before:h-[397px] before:bottom-0 before:left-0 before:bg-[#FEEEE9] before:absolute before:z-[-1]">
     <div class="container-responsive">
-        <div class="text-center mb-16">
-            <h2 class="section-title text-orange-500 mb-4">
-                こんなお仕事探していませんか？
-            </h2>
-            <div class="flex justify-center items-center space-x-2 mb-8">
-                <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
-                <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
-                <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
+        <h2 class="section-title mb-0">
+            こんなお仕事探していませんか？
+            <span class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </h2>
+
+        <div class="flex flex-wrap justify-center gap-x-[30px] gap-y-[28px] mt-[35px]">
+            <div class="job-card px-[19px]">
+                <div class="aspect-square">
+                    <img src="<?= THEME_URL ?>/images/job-photo-1.webp" alt="薬剤師の資格を活かしたい">
+                </div>
+                <p class="text-center text-[20px] mt-[14px] tracking-[2px] mb-0 leading-[27px]">薬剤師の資格を活かしたい</p>
+            </div>
+
+            <div class="job-card px-[19px]">
+                <div class="aspect-square">
+                    <img src="<?= THEME_URL ?>/images/job-photo-2.webp" alt="仕事とプライベートを 両立させたい">
+                </div>
+                <p class="text-center text-[20px] mt-[14px] tracking-[2px] mb-0 leading-[27px]">仕事とプライベートを<br>両立させたい</p>
+            </div>
+
+            <div class="job-card px-[19px]">
+                <div class="aspect-square">
+                    <img src="<?= THEME_URL ?>/images/job-photo-3.webp" alt="安定した収入を得たい">
+                </div>
+                <p class="text-center text-[20px] mt-[14px] tracking-[2px] mb-0 leading-[27px]">安定した収入を得たい</p>
+            </div>
+
+            <div class="job-card px-[19px]">
+                <div class="aspect-square">
+                    <img src="<?= THEME_URL ?>/images/job-photo-4.webp" alt="長く安心して働き続けたい">
+                </div>
+                <p class="text-center text-[20px] mt-[14px] tracking-[2px] mb-0 leading-[27px]">長く安心して働き続けたい</p>
+            </div>
+
+            <div class="job-card px-[19px]">
+                <div class="aspect-square">
+                    <img src="<?= THEME_URL ?>/images/job-photo-5.webp" alt="患者様一人ひとりに 寄り添って働きたい">
+                </div>
+                <p class="text-center text-[20px] mt-[14px] tracking-[2px] mb-0 leading-[27px]">患者様一人ひとりに<br>寄り添って働きたい</p>
             </div>
         </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
-            <!-- Job Card 1 -->
-            <div class="job-card bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="aspect-square bg-gray-100 flex items-center justify-center">
-                    <!-- <img src="https://via.placeholder.com/300x300/f0f0f0/666666?text=薬剤師" alt="薬剤師の資格を活かしたい" class="w-full h-full object-cover"> -->
-                </div>
-                <div class="p-6 text-center">
-                    <p class="text-gray-800 font-medium text-lg">薬剤師の資格を活かしたい</p>
-                </div>
-            </div>
-
-            <!-- Job Card 2 -->
-            <div class="job-card bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="aspect-square bg-gray-100 flex items-center justify-center">
-                    <!-- <img src="https://via.placeholder.com/300x300/f0f0f0/666666?text=プライベート" alt="仕事とプライベートを両立させたい" class="w-full h-full object-cover"> -->
-                </div>
-                <div class="p-6 text-center">
-                    <p class="text-gray-800 font-medium text-lg">仕事とプライベートを<br>両立させたい</p>
-                </div>
-            </div>
-
-            <!-- Job Card 3 -->
-            <div class="job-card bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="aspect-square bg-gray-100 flex items-center justify-center">
-                    <!-- <img src="https://via.placeholder.com/300x300/f0f0f0/666666?text=安定収入" alt="安定した収入を得たい" class="w-full h-full object-cover"> -->
-                </div>
-                <div class="p-6 text-center">
-                    <p class="text-gray-800 font-medium text-lg">安定した収入を得たい</p>
-                </div>
-            </div>
-
-            <!-- Job Card 4 -->
-            <div class="job-card bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="aspect-square bg-gray-100 flex items-center justify-center">
-                    <!-- <img src="https://via.placeholder.com/300x300/f0f0f0/666666?text=長期雇用" alt="長く安心して働き続けたい" class="w-full h-full object-cover"> -->
-                </div>
-                <div class="p-6 text-center">
-                    <p class="text-gray-800 font-medium text-lg">長く安心して働き続けたい</p>
-                </div>
-            </div>
-
-            <!-- Job Card 5 -->
-            <div class="job-card bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="aspect-square bg-gray-100 flex items-center justify-center">
-                    <!-- <img src="https://via.placeholder.com/300x300/f0f0f0/666666?text=患者ケア" alt="患者様一人ひとりに寄り添って働きたい" class="w-full h-full object-cover"> -->
-                </div>
-                <div class="p-6 text-center">
-                    <p class="text-gray-800 font-medium text-lg">患者様一人ひとりに<br>寄り添って働きたい</p>
-                </div>
-            </div>
-
-            <!-- Empty slot for 3x2 grid alignment -->
-            <div class="hidden md:block"></div>
-        </div>
-
-        <div class="text-center">
-            <a href="#inquiry-form" class="inline-block bg-gradient-to-r from-orange-400 to-pink-400 text-white px-8 py-4 rounded-full font-medium text-lg hover:from-orange-500 hover:to-pink-500 transition-all duration-300 shadow-lg hover:shadow-xl">
+        <div class="text-center w-[900px] h-[76px] mx-auto mt-[49px]">
+            <a href="#inquiry-form" class="w-full h-full flex items-center justify-center bg-white text-[var(--color-orange)] text-2xl text-[var(--color-orange)] rounded-[8px] text-[28px] font-bold tracking-[3.3px]">
                 そんな方は、ぜひ株式会社C&Cメディカルへ！
             </a>
         </div>
@@ -117,444 +94,227 @@
 </section>
 
 <!-- Manga Section -->
-<section class="content-section section-white">
+<section class="content-section section-white py-[80px] bg-[#FEEEE9]">
     <div class="container-responsive">
-        <div class="text-center mb-12">
-            <h2 class="section-title">
-                マンガでわかる株式会社C&Cメディカル
-            </h2>
-        </div>
-
-        <div class="max-w-4xl mx-auto">
-            <div class="bg-gray-200 rounded-lg h-96 flex items-center justify-center">
-                <div class="text-center">
-                    <svg class="icon-large" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
-                    <p class="text-gray-500">マンガコンテンツがここに表示されます</p>
-                </div>
-            </div>
-        </div>
+        <h2 class="section-title mb-0">
+            マンガでわかる株式会社C&Cメディカル
+            <span class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </h2>
+        <div class="max-w-[760px] h-[427px] bg-[#d9d9d9] mx-auto mt-[31px]"></div>
     </div>
 </section>
 
 <!-- 5 Reasons Section -->
-<section class="content-section py-20" style="background: linear-gradient(135deg, #FFE5E5, #E5F3FF, #E5FFE5);">
+<section class="content-section py-[80px] bg-cover bg-full" style="background-image: url(<?= THEME_URL ?>/images/reason_bg.webp)">
     <div class="container-responsive">
-        <div class="text-center mb-16">
-            <h2 class="section-title text-orange-500 mb-4">
-                当社が選ばれる5つの理由
-            </h2>
-            <div class="flex justify-center items-center space-x-2 mb-8">
-                <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
-                <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
-                <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
+        <h2 class="section-title ">
+            当社が選ばれる5つの理由
+            <span class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </h2>
+
+        <div class="flex flex-wrap gap-x-[30px] gap-y-[48px] justify-center mt-[54px]">
+            <div class="relative flex flex-col items-center justify-start bg-white rounded-[8px] px-[20px] py-[20px] pb-[26px] max-w-[340px] w-full">
+                <div class="absolute top-[-18px] w-[60px] h-[60px] rounded-full bg-[var(--color-orange)] flex items-center justify-center text-white font-bold text-2xl">
+                    01
+                </div>
+                <div class=" rounded-[30px] overflow-hidden">
+                     <img src="<?= THEME_URL ?>/images/reason-photo-1.webp" alt="努力や成長をしっかり評価してもらえる">
+                </div>
+                <p class="text-center font-bold text-[20px] tracking-[2px] my-0 mt-2 leading-1.3 text-[var(--color-orange)]">努力や成長をしっかり<br>評価してもらえる</p>
+            </div>
+            <div class="relative flex flex-col items-center justify-start bg-white rounded-[8px] px-[20px] py-[20px] pb-[26px] max-w-[340px] w-full">
+                <div class="absolute top-[-18px] w-[60px] h-[60px] rounded-full bg-[var(--color-orange)] flex items-center justify-center text-white font-bold text-2xl">
+                    02
+                </div>
+                <div class=" rounded-[30px] overflow-hidden">
+                    <img src="<?= THEME_URL ?>/images/reason-photo-2.webp" alt="地域密着型のため、患者様との関係地を築きやすい">
+                </div>
+                <p class="text-center font-bold text-[20px] tracking-[2px] my-0 mt-2 leading-1.3 text-[var(--color-orange)]">地域密着型のため、患者様<br>との関係地を築きやすい</p>
+            </div>
+            <div class="relative flex flex-col items-center justify-start bg-white rounded-[8px] px-[20px] py-[20px] pb-[26px] max-w-[340px] w-full">
+                <div class="absolute top-[-18px] w-[60px] h-[60px] rounded-full bg-[var(--color-orange)] flex items-center justify-center text-white font-bold text-2xl">
+                    03
+                </div>
+                <div class=" rounded-[30px] overflow-hidden">
+                    <img src="<?= THEME_URL ?>/images/reason-photo-3.webp" alt="クリニックとの合同研修会でスキルアップができる">
+                </div>
+                <p class="text-center font-bold text-[20px] tracking-[2px] my-0 mt-2 leading-1.3 text-[var(--color-orange)]">クリニックとの合同研修会<br>でスキルアップができる</p>
+            </div>
+            <div class="relative flex flex-col items-center justify-start bg-white rounded-[8px] px-[20px] py-[20px] pb-[26px] max-w-[340px] w-full">
+                <div class="absolute top-[-18px] w-[60px] h-[60px] rounded-full bg-[var(--color-orange)] flex items-center justify-center text-white font-bold text-2xl">
+                    04
+                </div>
+                <div class=" rounded-[30px] overflow-hidden">
+                    <img src="<?= THEME_URL ?>/images/reason-photo-4.webp" alt="ワークライフバランスを重視した働き方ができる">
+                </div>
+                <p class="text-center font-bold text-[20px] tracking-[2px] my-0 mt-2 leading-1.3 text-[var(--color-orange)]">ワークライフバランスを <br>重視した働き方ができる</p>
+            </div>
+            <div class="relative flex flex-col items-center justify-start bg-white rounded-[8px] px-[20px] py-[20px] pb-[26px] max-w-[340px] w-full">
+                <div class="absolute top-[-18px] w-[60px] h-[60px] rounded-full bg-[var(--color-orange)] flex items-center justify-center text-white font-bold text-2xl">
+                    05
+                </div>
+                <div class=" rounded-[30px] overflow-hidden">
+                    <img src="<?= THEME_URL ?>/images/reason-photo-5.webp" alt="会社や仲間からのフォローが手厚い">
+                </div>
+                <p class="text-center font-bold text-[20px] tracking-[2px] my-0 mt-2 leading-1.3 text-[var(--color-orange)]">会社や仲間からのフォロー<br>が手厚い</p>
             </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
-            <!-- First row: 3 cards -->
-            <!-- Reason Card 01 -->
-            <div class="relative bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div class="absolute top-4 right-4 z-10">
-                    <div class="w-12 h-12 bg-orange-400 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                        01
-                    </div>
-                </div>
-                <div class="aspect-square">
-                    <!-- <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=努力評価" alt="努力や成長をしっかり評価してもらえる" class="w-full h-full object-cover"> -->
-                </div>
-                <div class="p-6 text-center">
-                    <p class="text-gray-800 font-medium text-lg leading-relaxed">努力や成長をしっかり<br>評価してもらえる</p>
-                </div>
-            </div>
-
-            <!-- Reason Card 02 -->
-            <div class="relative bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div class="absolute top-4 right-4 z-10">
-                    <div class="w-12 h-12 bg-orange-400 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                        02
-                    </div>
-                </div>
-                <div class="aspect-square">
-                    <!-- <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=地域密着" alt="地域密着型のため、患者様との関係性を築きやすい" class="w-full h-full object-cover"> -->
-                </div>
-                <div class="p-6 text-center">
-                    <p class="text-gray-800 font-medium text-lg leading-relaxed">地域密着型のため、患者様<br>との関係性を築きやすい</p>
-                </div>
-            </div>
-
-            <!-- Reason Card 03 -->
-            <div class="relative bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2">
-                <div class="absolute top-4 right-4 z-10">
-                    <div class="w-12 h-12 bg-orange-400 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                        03
-                    </div>
-                </div>
-                <div class="aspect-square">
-                    <!-- <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=研修会" alt="クリニックとの合同研修会でスキルアップができる" class="w-full h-full object-cover"> -->
-                </div>
-                <div class="p-6 text-center">
-                    <p class="text-gray-800 font-medium text-lg leading-relaxed">クリニックとの合同研修会<br>でスキルアップができる</p>
-                </div>
-            </div>
-
-            <!-- Second row: 2 cards centered -->
-            <div class="md:col-start-1 lg:col-start-1">
-                <!-- Reason Card 04 -->
-                <div class="relative bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 max-w-sm mx-auto">
-                    <div class="absolute top-4 right-4 z-10">
-                        <div class="w-12 h-12 bg-orange-400 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                            04
-                        </div>
-                    </div>
-                    <div class="aspect-square">
-                        <!-- <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=ワークライフ" alt="ワークライフバランスを重視した働き方ができる" class="w-full h-full object-cover"> -->
-                    </div>
-                    <div class="p-6 text-center">
-                        <p class="text-gray-800 font-medium text-lg leading-relaxed">ワークライフバランスを<br>重視した働き方ができる</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="md:col-start-3 lg:col-start-3">
-                <!-- Reason Card 05 -->
-                <div class="relative bg-white rounded-3xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 max-w-sm mx-auto">
-                    <div class="absolute top-4 right-4 z-10">
-                        <div class="w-12 h-12 bg-orange-400 text-white rounded-full flex items-center justify-center font-bold text-lg">
-                            05
-                        </div>
-                    </div>
-                    <div class="aspect-square">
-                        <!-- <img src="https://via.placeholder.com/400x300/f0f0f0/666666?text=フォロー" alt="会社や仲間からのフォローが手厚い" class="w-full h-full object-cover"> -->
-                    </div>
-                    <div class="p-6 text-center">
-                        <p class="text-gray-800 font-medium text-lg leading-relaxed">会社や仲間からの<br>フォローが手厚い</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="text-center space-y-4">
-            <a href="#trial" class="inline-block bg-gradient-to-r from-orange-400 to-pink-400 text-white px-8 py-3 rounded-full font-medium text-lg hover:from-orange-500 hover:to-pink-500 transition-all duration-300 shadow-lg hover:shadow-xl mr-4">
-                体験入社はこちら
+        <div class="text-center flex justify-center gap-10 mt-[40px]">
+            <a href="#" class="w-[520px] h-[84px] flex items-center justify-center text-2xl text-white bg-[var(--color-orange)] rounded-full gap-2">
+                <span class="tracking-[2.5px]">店舗一覧はこちら</span>
+                <img src="<?= THEME_URL ?>/images/icon-arrow.webp" alt="">
             </a>
-            <a href="#inquiry-form" class="inline-block bg-gradient-to-r from-green-400 to-green-500 text-white px-8 py-3 rounded-full font-medium text-lg hover:from-green-500 hover:to-green-600 transition-all duration-300 shadow-lg hover:shadow-xl">
-                お問い合わせ
+            <a href="#" class="w-[520px] h-[84px] flex items-center justify-center text-2xl text-white bg-[var(--color-green)] rounded-full gap-2">
+                <span class="tracking-[2.5px]">問い合わせする</span>
+                <img src="<?= THEME_URL ?>/images/icon-arrow.webp" alt="">
             </a>
         </div>
     </div>
 </section>
 
 <!-- High Income Section -->
-<section class="content-section section-white py-20">
-    <div class="container-responsive">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <!-- Text Content -->
-            <div class="space-y-6">
-                <h2 class="text-3xl md:text-4xl font-bold mb-6">
-                    <span class="text-orange-500">高収入×働きやすさ</span><br>
-                    <span class="text-gray-800">理想の職場がここに</span>
+<section class="content-section section-white">
+    <div class="container-responsive !max-w-full !px-0">
+        <div class="flex justify-end items-center">
+            <div class="bg-white rounded-[8px] max-w-[700px] w-full px-[50px] py-[50px] mr-[-301px] relative z-1 pb-[37px]">
+                <h2 class="text-[40px] font-bold text-[var(--color-orange)] tracking-[4px] my-0 mt-1">
+                    <span>高収入×働きやすさ</span><br>
+                    <span class="block mt-[6px] text-[26px] tracking-[2.7px]">理想の職場がここに</span>
                 </h2>
-
-                <div class="space-y-4 text-gray-700 leading-relaxed">
-                    <p>当社では、スタッフ一人ひとりが</p>
-                    <p>快適に働ける環境づくりを何よりも大切にしております。</p>
-                    <p>一人ひとりの努力や成長をしっかり評価するため、</p>
-                    <p>頑張った分がお給料として反映されます。</p>
-                    <p>また十分なお休みを設けるとともに、</p>
-                    <p>各種保険などの福利厚生も整えておりますので、</p>
-                    <p>安心して働いていただけます！</p>
-                </div>
+                <p class="mt-[35px] tracking-[1.6px] leading-[32px]">当社では、スタッフ一人ひとりが<br>快適に働ける環境づくりを何よりも大切にしております。<br>一人ひとりの努力や成長をしっかり評価するため、<br>頑張った分がお給料として反映されます。<br>また十分なお休みを設けるとともに、<br>各種保険などの福利厚生も整えておりますので、<br>安心して働いていただけます！</p>
             </div>
-
-            <!-- Image -->
             <div class="relative">
-                <div class="rounded-2xl overflow-hidden shadow-xl">
-                    <!-- <img src="https://via.placeholder.com/600x400/f0f0f0/666666?text=薬局の棚" alt="薬剤師が薬局の棚で薬を整理している様子" class="w-full h-[400px] object-cover"> -->
-                </div>
-                <!-- Decorative elements can be added here if needed -->
+                <img src="<?= THEME_URL ?>/images/feature_list_bg-01.webp" alt="高収入×働きやすさ" class="">
             </div>
         </div>
-    </div>
-</section>
-
-<!-- Training System Section -->
-<section class="content-section section-peach">
-    <div class="container-responsive">
-        <div class="content-grid">
-            <div class="bg-gray-200 rounded-lg h-80 flex items-center justify-center">
-                <div class="text-center">
-                    <svg class="icon-large" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                    </svg>
-                    <p class="text-gray-500">タブレットを見ながら薬を並べる薬剤師</p>
-                </div>
-            </div>
-            <div>
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                    経験者優遇 充実の研修制度
+        <div class="flex justify-end flex-row-reverse items-center mt-[45px]">
+            <div class="bg-white rounded-[8px] max-w-[700px] w-full  px-[50px] pt-[54px] pb-[34px] ml-[-300px] relative z-1">
+                <h2 class="text-[40px] font-bold text-[var(--color-orange)] tracking-[4px] my-0 mt-1">
+                    <span>経験者優遇</span><br>
+                    <span class="block mt-[6px] text-[26px] tracking-[2.7px]">管理薬剤師の業務</span>
                 </h2>
-                <p class="text-lg text-gray-600 leading-relaxed mb-6">
-                    経験豊富な薬剤師の皆様を優遇いたします。
-                    また、充実した研修制度により、スキルアップをサポートします。
-                    新しい技術や知識を習得できる環境を整えています。
-                </p>
-                <ul class="feature-list">
-                    <li class="feature-item">
-                        <svg class="feature-icon feature-icon-orange" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                        </svg>
-                        経験者優遇の給与
-                    </li>
-                    <li class="feature-item">
-                        <svg class="feature-icon feature-icon-orange" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                        </svg>
-                        充実した研修制度
-                    </li>
-                    <li class="feature-item">
-                        <svg class="feature-icon feature-icon-orange" fill="currentColor" viewBox="0 0 20 20">
-                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                        </svg>
-                        スキルアップ支援
-                    </li>
-                </ul>
+                <p class="mt-[35px] tracking-[1.6px] leading-[32px]">処方箋に基づく調剤や投薬はもちろん、店舗責任者として<br>店舗内に勤務している薬剤師をまとめる仕事が主な業務です。<br><br>薬剤師の基本業務に加えて在庫管理や保健所対応、従業員管理など、<br>幅広く業務をお任せするため、<br>自身のスキルアップができやりがいをもって働いていただけます。<br><br>また定期的に近隣のクリニックと合同で行う勉強会を行うため、<br>日々の業務で疑問に思ったことや知らなかったことなど<br>様々な知識を蓄えることができます。<br>ぜひこの勉強会に参加して自身の成長の糧にしてください！</p>
+            </div>
+            <div class="relative leading-0">
+                <img src="<?= THEME_URL ?>/images/feature_list_bg-02.webp" alt="経験者優遇" class="">
             </div>
         </div>
     </div>
 </section>
 
 <!-- Application Requirements Section -->
-<section class="content-section py-20" style="background: linear-gradient(135deg, #FFE5E5, #E5F3FF, #E5FFE5);">
+<?php
+    $table = [
+        '募集職種' => '薬剤師',
+        '資格等' => '必須　薬剤師免許<br>優遇　認定薬剤師免許',
+        '採用区分' => '正社員',
+        '雇用期間' => '定めなし',
+        '契約期間' => '定めなし',
+        '試用期間' => 'あり（3ヶ月）<br>※試用期間中の給与：変更なし',
+        '勤務地' => '愛知県名古屋市守山区大森1-2114',
+        '交通アクセス' => '名鉄瀬戸線　大森・金城学院前駅より徒歩9分',
+        '賞与' => 'なし',
+        '休日' => '週休2日制（休診日:日祝）',
+        '給与' => '年棒制：4,200,000円～8,000,000円<br>月給：350,000円～650,000円',
+        'その他⼿当' => '管理薬剤師手当<br>認定薬剤師手当<br>かかりつけ薬剤師手当<br>交通費（全額支給）',
+        '保険' => '労災保険・健康保険・雇用保険・厚生年金完備',
+        '転勤' => '基本なし'
+    ];
+?>
+<section class="content-section py-20 bg-[#FEEEE9]">
     <div class="container-responsive">
-        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 items-start">
-            <!-- Title Section -->
-            <div class="lg:col-span-1">
-                <h2 class="text-3xl md:text-4xl font-bold text-orange-500 mb-4">
-                    募集要項
-                </h2>
-            </div>
+        <div class="flex flex-wrap justify-between gap-8 items-start">
+            <h2 class="text-[40px] tracking-[4px] text-[var(--color-orange)] mt-[1px] font-bold">
+                募集要項
+            </h2>
 
-            <!-- Requirements Table -->
-            <div class="lg:col-span-4">
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
-                    <table class="w-full">
+            <div class="max-w-[800px] bg-white w-full rounded-[8px] px-[38px] py-[22px] pb-[40px]">
+                <table class="w-full">
                         <tbody>
-                            <!-- 職種 -->
-                            <tr class="border-b border-gray-100">
-                                <td class="bg-orange-50 text-orange-600 font-medium px-6 py-4 w-32 border-r border-gray-100">
-                                    業務内容
-                                </td>
-                                <td class="px-6 py-4 text-gray-800">
-                                    薬剤師
-                                </td>
-                            </tr>
-
-                            <!-- 雇用区分 -->
-                            <tr class="border-b border-gray-100">
-                                <td class="bg-orange-50 text-orange-600 font-medium px-6 py-4 border-r border-gray-100">
-                                    雇用区分
-                                </td>
-                                <td class="px-6 py-4 text-gray-800">
-                                    正社員
-                                </td>
-                            </tr>
-
-                            <!-- 雇用期間 -->
-                            <tr class="border-b border-gray-100">
-                                <td class="bg-orange-50 text-orange-600 font-medium px-6 py-4 border-r border-gray-100">
-                                    雇用期間
-                                </td>
-                                <td class="px-6 py-4 text-gray-800">
-                                    定めなし
-                                </td>
-                            </tr>
-
-                            <!-- 契約期間 -->
-                            <tr class="border-b border-gray-100">
-                                <td class="bg-orange-50 text-orange-600 font-medium px-6 py-4 border-r border-gray-100">
-                                    契約期間
-                                </td>
-                                <td class="px-6 py-4 text-gray-800">
-                                    定めなし
-                                </td>
-                            </tr>
-
-                            <!-- 就業期間 -->
-                            <tr class="border-b border-gray-100">
-                                <td class="bg-orange-50 text-orange-600 font-medium px-6 py-4 border-r border-gray-100">
-                                    就業期間
-                                </td>
-                                <td class="px-6 py-4 text-gray-800">
-                                    あり（3ヶ月）<br>
-                                    <span class="text-sm text-gray-600">※試用期間中の給与・変更なし</span>
-                                </td>
-                            </tr>
-
-                            <!-- 勤務地 -->
-                            <tr class="border-b border-gray-100">
-                                <td class="bg-orange-50 text-orange-600 font-medium px-6 py-4 border-r border-gray-100">
-                                    勤務地
-                                </td>
-                                <td class="px-6 py-4 text-gray-800">
-                                    愛知県名古屋市中区大須1-2114
-                                </td>
-                            </tr>
-
-                            <!-- 交通アクセス -->
-                            <tr class="border-b border-gray-100">
-                                <td class="bg-orange-50 text-orange-600 font-medium px-6 py-4 border-r border-gray-100">
-                                    交通アクセス
-                                </td>
-                                <td class="px-6 py-4 text-gray-800">
-                                    名鉄瀬戸線　大森・金城学院前駅より徒歩3分
-                                </td>
-                            </tr>
-
-                            <!-- 賃金 -->
-                            <tr class="border-b border-gray-100">
-                                <td class="bg-orange-50 text-orange-600 font-medium px-6 py-4 border-r border-gray-100">
-                                    賃金
-                                </td>
-                                <td class="px-6 py-4 text-gray-800">
-                                    なし
-                                </td>
-                            </tr>
-
-                            <!-- 休日 -->
-                            <tr class="border-b border-gray-100">
-                                <td class="bg-orange-50 text-orange-600 font-medium px-6 py-4 border-r border-gray-100">
-                                    休日
-                                </td>
-                                <td class="px-6 py-4 text-gray-800">
-                                    週休2日制（休診日・日祝）
-                                </td>
-                            </tr>
-
-                            <!-- 給与 -->
-                            <tr class="border-b border-gray-100">
-                                <td class="bg-orange-50 text-orange-600 font-medium px-6 py-4 border-r border-gray-100">
-                                    給与
-                                </td>
-                                <td class="px-6 py-4 text-gray-800">
-                                    年俸制：4,200,000円～5,000,000円<br>
-                                    月給：350,000円～650,000円
-                                </td>
-                            </tr>
-
-                            <!-- その他手当 -->
-                            <tr class="border-b border-gray-100">
-                                <td class="bg-orange-50 text-orange-600 font-medium px-6 py-4 border-r border-gray-100">
-                                    その他手当
-                                </td>
-                                <td class="px-6 py-4 text-gray-800">
-                                    管理薬剤師手当<br>
-                                    認定薬剤師手当<br>
-                                    かかりつけ薬剤師手当<br>
-                                    交通費（全額支給）
-                                </td>
-                            </tr>
-
-                            <!-- 保険 -->
-                            <tr class="border-b border-gray-100">
-                                <td class="bg-orange-50 text-orange-600 font-medium px-6 py-4 border-r border-gray-100">
-                                    保険
-                                </td>
-                                <td class="px-6 py-4 text-gray-800">
-                                    労災保険・健康保険・雇用保険・厚生年金完備
-                                </td>
-                            </tr>
-
-                            <!-- 転勤 -->
+                            <?php foreach ($table as $key => $value) :  ?>
                             <tr>
-                                <td class="bg-orange-50 text-orange-600 font-medium px-6 py-4 border-r border-gray-100">
-                                    転勤
+                                <td class="w-[201px] align-middle font-bold text-[var(--color-orange)] tracking-[1.5px] border-b border-[#C7C7C7]">
+                                    <?= $key ?>
                                 </td>
-                                <td class="px-6 py-4 text-gray-800">
-                                    基本なし
+                                <td class="px-5 pt-[20px] pb-[24px] tracking-[0.8px] border-b border-[#C7C7C7]">
+                                    <?= nl2br($value); ?>
                                 </td>
                             </tr>
+                            <?php endforeach; ?>
                         </tbody>
                     </table>
-                </div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Store List Section -->
-<section class="content-section section-peach py-20">
+<section class="content-section section-peach pt-[50px] pb-[52px] relative before:content-[''] before:w-full before:h-[397px] before:bottom-0 before:left-0 before:bg-[#FEEEE9] before:absolute before:z-[-1]">
     <div class="container-responsive">
-        <div class="text-center mb-16">
-            <h2 class="section-title text-orange-500 mb-4">
-                店舗一覧
-            </h2>
-            <div class="flex justify-center items-center space-x-2 mb-8">
-                <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
-                <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
-                <div class="w-2 h-2 bg-orange-400 rounded-full"></div>
-            </div>
-        </div>
+        <h2 class="section-title mb-0">
+            店舗一覧
+            <span class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </h2>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <!-- Store Card 1 - どんぐり調剤薬局 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="aspect-square bg-gray-200"></div>
-                <div class="p-6 text-center">
-                    <h3 class="text-orange-500 font-bold text-xl mb-2">どんぐり調剤薬局</h3>
-                    <p class="text-gray-700 text-sm mb-1">〒463-0021</p>
-                    <p class="text-gray-700 text-sm">愛知県名古屋市守山区大字志段味字東谷2114</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-[30px] gap-y-[40px] max-w-6xl mx-auto mt-[35px]">
+            <div class="">
+                <div class="max-w-[300px] mx-auto w-full leading-0"><img src="<?= THEME_URL ?>/images/shop_list_img-01.webp" alt="" class="w-full h-full object-cover object-center rounded-[30px]"></div>
+                <div class="">
+                    <h3 class="mt-[15px] mb-[12px] text-[var(--color-orange)] font-bold text-[20px] tracking-[2px] text-center">どんぐり調剤薬局</h3>
+                    <p class="text-center my-0 tracking-[1.6px] leading-[22px]">〒463-0021<br>愛知県名古屋市守山区大森1-2114</p>
                 </div>
             </div>
 
-            <!-- Store Card 2 - あおぞら薬局 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="aspect-square bg-gray-200"></div>
-                <div class="p-6 text-center">
-                    <h3 class="text-orange-500 font-bold text-xl mb-2">あおぞら薬局</h3>
-                    <p class="text-gray-700 text-sm mb-1">〒487-0027</p>
-                    <p class="text-gray-700 text-sm">愛知県春日井市松本町1-3-9</p>
+            <div class="">
+                <div class="max-w-[300px] mx-auto w-full leading-0"><img src="<?= THEME_URL ?>/images/shop_list_img-01.webp" alt="" class="w-full h-full object-cover object-center rounded-[30px]"></div>
+                <div class="">
+                    <h3 class="mt-[15px] mb-[12px] text-[var(--color-orange)] font-bold text-[20px] tracking-[2px] text-center">あおぞら薬局</h3>
+                    <p class="text-center my-0 tracking-[1.6px] leading-[22px]">〒487-0027<br>愛知県春日井市松本町1-3-9</p>
                 </div>
             </div>
 
-            <!-- Store Card 3 - クローバー薬局 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="aspect-square bg-gray-200"></div>
-                <div class="p-6 text-center">
-                    <h3 class="text-orange-500 font-bold text-xl mb-2">クローバー薬局</h3>
-                    <p class="text-gray-700 text-sm mb-1">〒491-0925</p>
-                    <p class="text-gray-700 text-sm">愛知県一宮市大和町南高井蓮原</p>
+            <div class="">
+                <div class="max-w-[300px] mx-auto w-full leading-0"><img src="<?= THEME_URL ?>/images/shop_list_img-01.webp" alt="" class="w-full h-full object-cover object-center rounded-[30px]"></div>
+                <div class="">
+                    <h3 class="mt-[15px] mb-[12px] text-[var(--color-orange)] font-bold text-[20px] tracking-[2px] text-center">クローバー薬局</h3>
+                    <p class="text-center my-0 tracking-[1.6px] leading-[22px]">〒491-0925<br>愛知県一宮市大和町南高井蓮原</p>
                 </div>
             </div>
 
-            <!-- Store Card 4 - なかよし薬局 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="aspect-square bg-gray-200"></div>
-                <div class="p-6 text-center">
-                    <h3 class="text-orange-500 font-bold text-xl mb-2">なかよし薬局</h3>
-                    <p class="text-gray-700 text-sm mb-1">〒491-0141</p>
-                    <p class="text-gray-700 text-sm">愛知県一宮市浅井町東海道石刀山47-1</p>
+            <div class="">
+                <div class="max-w-[300px] mx-auto w-full leading-0"><img src="<?= THEME_URL ?>/images/shop_list_img-01.webp" alt="" class="w-full h-full object-cover object-center rounded-[30px]"></div>
+                <div class="">
+                    <h3 class="mt-[15px] mb-[12px] text-[var(--color-orange)] font-bold text-[20px] tracking-[2px] text-center">なかよし薬局</h3>
+                    <p class="text-center my-0 tracking-[1.6px] leading-[22px]">〒491-0141<br>愛知県一宮市浅井町黒岩石刀山47-1</p>
                 </div>
             </div>
 
-            <!-- Store Card 5 - タートル薬局 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="aspect-square bg-gray-200"></div>
-                <div class="p-6 text-center">
-                    <h3 class="text-orange-500 font-bold text-xl mb-2">タートル薬局</h3>
-                    <p class="text-gray-700 text-sm mb-1">〒441-8113</p>
-                    <p class="text-gray-700 text-sm">愛知県豊橋市西幸町松之32-1</p>
+            <div class="">
+                <div class="max-w-[300px] mx-auto w-full leading-0"><img src="<?= THEME_URL ?>/images/shop_list_img-01.webp" alt="" class="w-full h-full object-cover object-center rounded-[30px]"></div>
+                <div class="">
+                    <h3 class="mt-[15px] mb-[12px] text-[var(--color-orange)] font-bold text-[20px] tracking-[2px] text-center">タートル薬局</h3>
+                    <p class="text-center my-0 tracking-[1.6px] leading-[22px]">〒441-8113<br>愛知県豊橋市西幸町松之32-1</p>
                 </div>
             </div>
 
-            <!-- Store Card 6 - さくらなみき薬局 -->
-            <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div class="aspect-square bg-gray-200"></div>
-                <div class="p-6 text-center">
-                    <h3 class="text-orange-500 font-bold text-xl mb-2">さくらなみき薬局</h3>
-                    <p class="text-gray-700 text-sm mb-1">〒468-0009</p>
-                    <p class="text-gray-700 text-sm">愛知県名古屋市天白区元植田2-2406</p>
+            <div class="">
+                <div class="max-w-[300px] mx-auto w-full leading-0"><img src="<?= THEME_URL ?>/images/shop_list_img-01.webp" alt="" class="w-full h-full object-cover object-center rounded-[30px]"></div>
+                <div class="">
+                    <h3 class="mt-[15px] mb-[12px] text-[var(--color-orange)] font-bold text-[20px] tracking-[2px] text-center">さくらなみき薬局</h3>
+                    <p class="text-center my-0 tracking-[1.6px] leading-[22px]">〒468-0009<br>愛知県名古屋市天白区元植田2-2406</p>
                 </div>
             </div>
         </div>
@@ -577,7 +337,7 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                     国と一味に思いやりを描けよう
                 </h2>
-                <p class="text-lg text-gray-600 leading-relaxed mb-6">
+                <p class="text-lg text-gray-600 mb-6">
                     私たちは、地域の皆様の健康を支えるため、
                     思いやりを持ってサービスを提供いたします。
                     国と共に、地域社会の発展に貢献していきます。

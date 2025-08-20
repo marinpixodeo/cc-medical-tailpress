@@ -17,7 +17,7 @@
             <!-- Logo Section -->
             <div class="logo mt-[3px]">
                 <a href="<?php echo esc_url(home_url('/')); ?>" class="flex items-start group">
-                    <!-- <img src="<?= THEME_URL; ?>images/top_hd_logo.webp" alt=""> -->
+                     <img src="<?= THEME_URL; ?>images/top_hd_logo.webp" alt="">
                 </a>
             </div>
 
@@ -31,7 +31,7 @@
                 <!-- Inquiry Button -->
                 <a href="#inquiry" class="bg-[var(--color-green)] w-[266px] h-[56px] text-white font-bold text-[16px] gap-[10px] tracking-[1.5px] rounded-full transform transition-all duration-200 flex items-center justify-center !no-underline">
                     <span>問い合わせする</span>
-                    <!-- <img src="<?= THEME_URL ?>/images/icon-arrow.webp" alt=""> -->
+                     <img src="<?= THEME_URL ?>/images/icon-arrow.webp" alt="">
                 </a>
             </div>
         </div>

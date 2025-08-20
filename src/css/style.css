@@ -9,17 +9,63 @@
     --color-gray-50: #f9fafb;
     --color-gray-100: #f3f4f6;
     --color-gray-900: #111827;
-    --color-green: #000;
+    --color-green: #95DBC3;
+    --color-gray-dark: #444444;
+    --color-orange: #F8B497;
   }
+}
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+table{
+  border-collapse: collapse;
 }
 
 
 body{
   font-family: 'Zen Kaku Gothic New', sans-serif !important;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-gray-dark);
+  margin: 0;
 }
 
 .container-responsive{
-  max-width: 1200px;
+  max-width: 1110px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.section-title{
+  color: var(--color-orange);
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 60px;
+  letter-spacing: 4px;
+  margin-top: 0;
+  text-align: center;
+}
+
+
+.section-title .dots{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 9px;
+}
+.section-title .dots span{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--color-orange);
+}
+.section-title .dots span:last-child{
+  background-color: var(--color-green);
 }
