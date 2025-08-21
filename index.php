@@ -169,11 +169,11 @@
             </div>
 
             <div class="text-center flex justify-center gap-10 mt-[40px]">
-                <a href="#" class="w-[520px] h-[84px] flex items-center justify-center text-2xl text-white bg-[var(--color-orange)] rounded-full gap-2">
+                <a href="#" class="btn w-[520px] h-[84px] flex items-center justify-center text-2xl text-white bg-[var(--color-orange)] rounded-full gap-2">
                     <span class="tracking-[2.5px]">店舗一覧はこちら</span>
                     <img src="<?= THEME_URL ?>/images/icon-arrow.webp" alt="">
                 </a>
-                <a href="#" class="w-[520px] h-[84px] flex items-center justify-center text-2xl text-white bg-[var(--color-green)] rounded-full gap-2">
+                <a href="#" class="btn w-[520px] h-[84px] flex items-center justify-center text-2xl text-white bg-[var(--color-green)] rounded-full gap-2">
                     <span class="tracking-[2.5px]">問い合わせする</span>
                     <img src="<?= THEME_URL ?>/images/icon-arrow.webp" alt="">
                 </a>
