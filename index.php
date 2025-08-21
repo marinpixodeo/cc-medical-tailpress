@@ -322,7 +322,7 @@
 </section>
 
 <!-- Compassion Section -->
-<section class="content-section section-white py-[126px] bg-center bg-cover" style="background-image: url('<?= THEME_URL ?>/images/sec_08.webp');">
+<section class="content-section section-white py-[126px] pb-[120px] bg-center bg-cover" style="background-image: url('<?= THEME_URL ?>/images/sec_08.webp');">
     <div class="container-responsive text-right">
         <div class="inline-block w-[700px] bg-white rounded-[8px] px-[50px] py-[56px] pb-[34px] text-left">
             <h3 class="text-[28px] font-bold text-[var(--color-orange)] my-0 tracking-[2.8px]">薬と一緒に思いやりを届けよう</h3>
@@ -332,76 +332,86 @@
 </section>
 
 <!-- Inquiry Form Section -->
-<section id="inquiry-form" class="content-section section-peach">
+<section id="inquiry-form" class="content-section section-peach pt-[82px]">
     <div class="container-responsive">
         <div class="text-center mb-12">
             <h2 class="section-title">
                 お問い合わせフォーム
+                <span class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
             </h2>
         </div>
 
-        <div class="max-w-2xl mx-auto">
-            <form class="form-container">
-                <div class="space-y-6">
-                    <div>
-                        <label class="form-label">
-                            お名前 <span class="required-mark">必須</span>
-                        </label>
-                        <input type="text" class="form-field" placeholder="お名前を入力してください">
-                    </div>
+        <div class="mx-auto">
+            <?= do_shortcode('[contact-form-7 id="064cf57" title="Contact form 1"]'); ?>
+        </div>
+<!--            CONTENT FORM 7-->
+<!--        <div class="recruitment-form">-->
+<!--            <div class="form-row"><label class="form-label">お名前<span class="required-badge">必須</span></label>[text* your-name class:form-input]</div>-->
+<!--            <div class="form-row"><label class="form-label">ご年齢<span class="required-badge">必須</span></label>[number* your-age class:form-input]</div>-->
+<!--            <div class="form-row"><label class="form-label">メールアドレス<span class="required-badge">必須</span></label>[email* your-email class:form-input]-->
+<!--            </div>-->
+<!--            <div class="form-row"><label class="form-label">お電話番号<span class="required-badge">必須</span></label>[tel* your-phone class:form-input]</div>-->
+<!--            <div class="form-row"><label class="form-label">現在のご職業<span class="required-badge">必須</span></label>[text* your-occupation class:form-input]</div>-->
+<!--            <div class="form-row"><label class="form-label">ご住所<span class="required-badge">必須</span></label>[text* your-address class:form-input]</div><div class="form-row"><label class="form-label">採用形態<span class="required-badge">必須</span></label>[select* employment-type class:form-select "正社員（新卒）" "正社員（中途）" "契約社員" "パート・アルバイト" "派遣社員"]</div><div class="form-submit-wrapper">[submit class:submit-btn "送信する"]</div>-->
+<!--        </div>-->
+    </div>
+</section>
 
-                    <div>
-                        <label class="form-label">
-                            フリガナ <span class="required-mark">必須</span>
-                        </label>
-                        <input type="text" class="form-field" placeholder="フリガナを入力してください">
-                    </div>
+<!-- Company Information Section 会社概要 -->
+<section class="company-info-section py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+            <!-- Section Title -->
+            <div class="text-center mb-12">
+                <h2 class="company-title text-3xl font-bold text-gray-800 mb-4">会社概要</h2>
+            </div>
 
-                    <div>
-                        <label class="form-label">
-                            メールアドレス <span class="required-mark">必須</span>
-                        </label>
-                        <input type="email" class="form-field" placeholder="メールアドレスを入力してください">
-                    </div>
+            <!-- Company Info Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                <!-- Company Details Table -->
+                <div class="company-details bg-white rounded-lg shadow-lg p-8">
+                    <table class="company-table w-full">
+                        <tbody>
+                            <tr class="company-row">
+                                <td class="company-label">会社名</td>
+                                <td class="company-value">株式会社CCメディカル</td>
+                            </tr>
+                            <tr class="company-row">
+                                <td class="company-label">所在地</td>
+                                <td class="company-value">〒463-0021 愛知県名古屋市守山区大森2丁目2114</td>
+                            </tr>
+                            <tr class="company-row">
+                                <td class="company-label">TEL</td>
+                                <td class="company-value">052-602-9355</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                    <div>
-                        <label class="form-label">
-                            電話番号 <span class="required-mark">必須</span>
-                        </label>
-                        <input type="tel" class="form-field" placeholder="電話番号を入力してください">
-                    </div>
-
-                    <div>
-                        <label class="form-label">
-                            お問い合わせ内容 <span class="required-mark">必須</span>
-                        </label>
-                        <textarea rows="4" class="form-field" placeholder="お問い合わせ内容を入力してください"></textarea>
-                    </div>
-
-                    <div>
-                        <label class="form-label">
-                            希望店舗
-                        </label>
-                        <select class="form-field">
-                            <option>店舗を選択してください</option>
-                            <option>名古屋店</option>
-                            <option>栄店</option>
-                            <option>大須店</option>
-                            <option>千種店</option>
-                            <option>中村店</option>
-                            <option>瑞穂店</option>
-                        </select>
-                    </div>
-
-                    <div class="text-center">
-                        <button type="submit" class="btn-green">
-                            送信する
-                        </button>
+                <!-- Google Maps -->
+                <div class="company-map bg-white rounded-lg shadow-lg p-4">
+                    <div class="map-container">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3259.1!2d136.9946!3d35.2085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600370648e12345!2z5oSb55-l55yM5ZCN5Y-k5bGL5biC5a6I5bGx5Yy65aSn5qOu77yS5LiB55uu77yS77yR77yR77yU!5e0!3m2!1sja!2sjp!4v1703000000000!5m2!1sja!2sjp"
+                            width="100%"
+                            height="300"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="rounded-lg"
+                            title="株式会社CCメディカル所在地">
+                        </iframe>
                     </div>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </section>
+
 
 <?php get_footer(); ?>
