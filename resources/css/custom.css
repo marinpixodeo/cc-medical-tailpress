@@ -184,6 +184,10 @@
   }
 }
 @media only screen and (max-width: 640px) {
+  #header.scrolled > div .head-cta{
+    margin-top: 0px;
+  }
+
   .recruitment-form .form-row p{
     flex-direction: column;
     gap: 15px;

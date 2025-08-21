@@ -15,12 +15,9 @@ function cc_medical_enqueue_styles() {
         [],
         filemtime(get_template_directory() . '/dist/style.css')
     );
-    wp_enqueue_script(
-        'cc-medical-tailwind-js',
-        get_template_directory_uri() . '/resources/js/app.js',
-        [],
-        filemtime(get_template_directory() . '/resources/js/app.js')
-    );
+    wp_enqueue_style( 'aos-css', 'https://unpkg.com/aos@2.3.4/dist/aos.css', array(), '2.3.4' );
+    wp_enqueue_script( 'aos-js', 'https://unpkg.com/aos@2.3.4/dist/aos.js', array(), '2.3.4', true );
+    wp_enqueue_script( 'cc-medical-js', get_template_directory_uri() . '/resources/js/app.js', array(), '2.3.4', true );
     wp_add_inline_script( 'aos-js', 'AOS.init();' );
 }
 add_action('wp_enqueue_scripts', 'cc_medical_enqueue_styles');

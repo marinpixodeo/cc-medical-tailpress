@@ -11,10 +11,9 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'xs': '480px', // thêm breakpoint xs
+        'xs': '480px',
       },
       colors: {
-        // Medical theme colors
         primary: {
           50: '#eff6ff',
           500: '#3b82f6',
