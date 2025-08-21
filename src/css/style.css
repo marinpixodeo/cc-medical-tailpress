@@ -1,6 +1,6 @@
 @import "tailwindcss/theme" layer(theme);
 @import "tailwindcss/utilities" layer(utilities);
-
+@import "aos/dist/aos.css";
 
 @layer theme {
   :root {
@@ -24,6 +24,11 @@ a{
 
 table{
   border-collapse: collapse;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -68,4 +73,11 @@ body{
 }
 .section-title .dots span:last-child{
   background-color: var(--color-green);
+}
+@media only screen and (max-width: 767px) {
+  .section-title{
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
 }

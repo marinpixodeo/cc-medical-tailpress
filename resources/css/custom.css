@@ -86,16 +86,24 @@
   }
 }
 
+#header.scrolled > div{
+  background: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#header.scrolled > div .head-cta{
+  margin-top: 8px;
+}
 
 .recruitment-form{
   padding: 0 49px 0 41px;
   display: flex;
   flex-direction: column;
-  gap: 23px;
+  gap: 22px;
 }
 .recruitment-form .form-row p{
   display: flex;
-  gap: 35px;
+  gap: 37px;
   margin: 0;
 }
 .recruitment-form .form-label{
@@ -157,7 +165,41 @@
   letter-spacing: 1.5px;
   color: #fff;
   border: none;
-  margin: 20px auto;
+  margin: 26px auto;
   border-radius: 90px;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1023px) {
+  .recruitment-form{
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .recruitment-form .form-label{
+    width: 200px;
+  }
+  .wpcf7-form-control-wrap{
+    width: calc(100% - 238px);
+  }
+}
+@media only screen and (max-width: 640px) {
+  .recruitment-form .form-row p{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .recruitment-form .required-badge{
+    margin-top: 0;
+  }
+  .recruitment-form .form-label{
+    width: 100%;
+    font-size: 14px;
+    align-items: center;
+  }
+  .wpcf7-form-control-wrap{
+    width: 100%;
+  }
+  .wpcf7-form-control-wrap[data-name="employment-type"]{
+    width: 100%;
+  }
 }

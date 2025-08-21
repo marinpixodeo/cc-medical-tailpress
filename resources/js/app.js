@@ -1,8 +1,18 @@
-// Mobile menu toggle
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+        duration: 800,
+        once: true,
+        offset: 20,
+    });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
-    
+
     if (mobileMenuButton && mobileMenu) {
         mobileMenuButton.addEventListener('click', function() {
             mobileMenu.classList.toggle('hidden');
@@ -19,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     behavior: 'smooth',
                     block: 'start'
                 });
-                
+
                 // Close mobile menu if open
                 if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
                     mobileMenu.classList.add('hidden');
@@ -66,11 +76,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (appointmentForm) {
         appointmentForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            
+
             // Basic validation
             const requiredFields = appointmentForm.querySelectorAll('[required]');
             let isValid = true;
-            
+
             requiredFields.forEach(field => {
                 if (!field.value.trim()) {
                     isValid = false;
@@ -79,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     field.classList.remove('border-red-500');
                 }
             });
-            
+
             if (isValid) {
                 // Show success message
                 alert('Cảm ơn bạn đã đặt lịch khám! Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.');
@@ -95,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function() {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-5px)';
         });
-        
+
         card.addEventListener('mouseleave', function() {
             this.style.transform = 'translateY(0)';
         });
